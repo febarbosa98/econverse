@@ -14,6 +14,8 @@
         font-size: 30px;
         color: $cor-azul;
         font-weight: 700;
+        text-align: center;
+        margin: 0 24px;
 
     }
 
@@ -32,7 +34,7 @@
 .produtos-text{
         display: flex;
         flex-direction: row;
-        gap: 34px;
+        // gap: 20px;
         align-items: center;
     }
 .categoria-lista{

@@ -5,26 +5,39 @@
 
   display: block;
     
-    img{
-        width: 100%;
-        object-fit: cover;
-        display: block ;
-        height: 390px;
+  
+  img{
+      width: 100%;
+      object-fit: cover;
+      display: block ;
+      height: 390px;
     }
-
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; // permite clicar nos elementos abaixo
+        background: linear-gradient(-90deg, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.9) 80% );
+    
+    z-index: 1;
+  }
     
     .banner-texto{
-         max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 80px; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    pointer-events: auto; 
-color: $cor-branco;  
-
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 80px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        pointer-events: auto; 
+        color: $cor-branco;  
+         z-index: 2;
+        
         h1{
             font-size: 48px;
             font-weight: 600;
@@ -64,4 +77,5 @@ color: $cor-branco;
   align-items: center;
   justify-content: flex-start; 
   pointer-events: none;
+  z-index: 2;
 }
