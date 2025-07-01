@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react';
 import './protudos.scss';
-import {products} from './carrosel/produtos.json';
-import setaEsquerda from '../../assets/img/icons/setaEsquerda.svg'
-import setaDireita from '../../assets/img/icons/setaDireita.svg'
 
 import Carrossel from './carrosel';
 
@@ -19,7 +16,6 @@ interface ModalProps{
 }
 
 
-// const ITENS_POR_PAGINA = 4;
 
 export default function Produtos({carroselOption}: ModalProps) {
 

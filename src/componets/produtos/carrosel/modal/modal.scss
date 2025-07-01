@@ -25,7 +25,7 @@
   max-height: 300px;
   background-color: $cor-branco;
   display: grid;
-  grid-template-columns: 1fr 1fr; // Duas colunas: imagem e texto
+  grid-template-columns: 1fr 1fr;
   align-items: start;
   padding-right: 69px;
     
@@ -101,7 +101,6 @@
     grid-column: 2;
     display: flex;
     gap: 10px;
-    // margin-top: 20px;
 
   .contador{
   border: 1px solid $cor-linha-borda;

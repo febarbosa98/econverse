@@ -25,10 +25,8 @@ const [produtoSelecionado, setProdutoSelecionado] = useState<Produto | undefined
 
     function handlePrev() {
          setStartIndex((prev) => {
-        // Volta para o final se estiver no início, senão decrementa
         const novoIndex = prev - itensPorPagina;
         if (novoIndex < 0) {
-            // Garante que sempre mostre 4 itens, mesmo se não for múltiplo
             const resto = products.length % itensPorPagina;
             return resto === 0
                 ? products.length - itensPorPagina

@@ -1,13 +1,7 @@
 @use '../../variables' as *;
 
 .banner{
-    // width: 100%; 
-//   min-width: 100vw;
   position: relative;
-//   left: 50%;
-//   right: 50%;
-//   margin-left: -50vw;
-//   margin-right: -50vw;
 
   display: block;
     
@@ -23,7 +17,7 @@
          max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding-left: 80px; // ajuste conforme o alinhamento do header
+    padding-left: 80px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,7 +61,7 @@ color: $cor-branco;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center; // centraliza verticalmente
-  justify-content: flex-start; // alinha à esquerda
+  align-items: center;
+  justify-content: flex-start; 
   pointer-events: none;
 }
