@@ -1,0 +1,91 @@
+@use '../../variables' as *;
+
+
+.newsletter{
+    background-color: $cor-violeta;
+    margin-top: 90px;
+    // height: 162px;
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 40px 0 32px 0;
+}
+
+.newsletter-container{
+    max-width: 1440px;
+     width: 100%;
+    display: flex;
+    padding: 40px 70px 40px 80px;
+    gap: 124px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.newsletter-texts{
+    
+
+    h2{
+        font-size: 32px;
+        font-weight: 600;
+        color: $cor-branco;
+        line-height: 120%;
+        vertical-align: middle;
+        font-family: 'Outfit', Arial, Helvetica, sans-serif ;
+        }
+
+    p{
+        color: $cor-branco;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 515px;
+    }
+
+}
+
+.newsletter-inputs{
+
+.inputs{
+    display: flex;
+    gap: 8px;
+    input{
+        width: 203px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        padding-left: 24px;
+        border: 1 solid $cor-branco-alternativo;
+        border-radius: 8px;
+
+    }
+
+    button{
+        background-color: $cor-amarelo;
+        color: $cor-violeta;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 12px;
+        padding: 15px 38px;
+        border: none;
+        border-radius: 8px;
+    }
+}
+
+.newsletter-checkbox{
+    margin-top: 8px;
+
+    input{
+        width: 15px;
+        height: 15px;
+    }
+
+    label{
+
+        color: $cor-branco;
+    }
+}
+}

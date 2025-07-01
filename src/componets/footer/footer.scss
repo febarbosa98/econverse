@@ -1,0 +1,70 @@
+@use '../../variables' as *;
+footer{
+    background-color: $cor-fundo-claro;
+}
+.footer-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 48px 78px;
+}
+
+
+.footer-logo-socias{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 354px;
+    margin-right: 90px;
+    justify-content: center;
+
+    .img-logo{
+        width: 164px;
+    }
+
+    .footer-socias{
+        display: flex;
+        gap: 28px;
+
+    }
+}
+
+.barra{
+  width: 1px;
+  height: 198px;
+  background: $cor-linha-escura;
+//   margin: 0 48px;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    gap: 117px;
+    margin: 0 ;
+     align-items: center;
+      width: 100%;
+
+    h3{
+        font-size: 16px;
+        font-weight: 700;
+        color: #222222B5 ;
+        line-height: 36px;
+    }
+    
+    p{
+        font-family: 'Work Sans', sans-serif ;
+        font-size: 14px;
+        font-weight: 400;
+        color: #222222B5;
+        line-height: 26px;
+    }
+}
+
+.copyright{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    color: $cor-texto-principal;
+    margin-bottom: 13px;
+}

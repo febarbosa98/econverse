@@ -1,0 +1,138 @@
+@use '../../../../variables' as *;
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $cor-texto-secundario;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  body.modal-aberto {
+    overflow: hidden;
+  }
+  
+  .modal-content{
+  border-radius: 6px;
+    position: relative;
+  max-width: 769px;
+  margin: 0 auto;
+  max-height: 300px;
+  background-color: $cor-branco;
+  display: grid;
+  grid-template-columns: 1fr 1fr; // Duas colunas: imagem e texto
+  align-items: start;
+  padding-right: 69px;
+    
+
+    img{
+        grid-column: 1;
+    width: 100%;
+    max-width: 247px;
+    max-height: 192.2px;
+    object-fit: contain;
+    margin: 36px auto 0 auto;
+    display: block;
+    }
+
+    .btn-close{
+        position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: $cor-texto-principal;
+        
+
+       
+    }
+}
+
+.modal-info{
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 43px;
+  margin-right: 69px;
+
+  h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: $cor-texto-principal;
+  }
+
+  span{
+    font-size: 20px;
+    font-weight: 600;
+    color: $cor-texto-principal;
+    margin-top: 18px;
+  }
+
+  p{
+    font-family: 'Work Sans', sans-serif;
+    color: $cor-texto-header;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 32px;
+  }
+
+  a{
+    font-family: 'Work Sans', sans-serif;
+    color: $cor-azul;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  
+}
+
+.botoes{
+
+    grid-column: 2;
+    display: flex;
+    gap: 10px;
+    // margin-top: 20px;
+
+  .contador{
+  border: 1px solid $cor-linha-borda;
+  width: 110px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn-contador{
+    background-color: transparent;
+    border: none;
+    font-size: 20px ;
+    cursor: pointer;
+  }
+
+  .numeroContador{
+    font-size: 16px;
+    font-weight: 500;
+    color: $cor-violeta;
+    padding: 0 12px;
+  }
+  }
+
+.btn-comprar{
+  background-color: $cor-amarelo;
+  width: 188px;
+  height: 36px;
+  border: none;
+  padding: 0;
+  margin-bottom: 37px;
+}
+    
+  }

@@ -1,0 +1,81 @@
+@use '../../variables' as *;
+
+.produtos{
+    max-width: 1364px ;
+    max-height: 613px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px ;
+
+    
+    h2{
+        font-size: 30px;
+        color: $cor-azul;
+        font-weight: 700;
+
+    }
+
+    p{
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+.produtos-barra{
+    width: 360px;
+    height: 1px;
+    // border: 1px solid black;
+    background-color: $cor-linha;
+}
+
+.produtos-text{
+        display: flex;
+        flex-direction: row;
+        // justify-content: center;
+        gap: 34px;
+        align-items: center;
+    }
+.categoria-lista{
+    display: grid;
+    max-width: 1320px;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);;
+    list-style: none;
+    // max-height: 40px;
+    // height: 100%;
+    // align-items: center;
+    text-align: center;
+    margin: 24px auto;    
+    padding: 0;
+    
+    // padding: 12px 58px;
+    
+   
+
+    .ativo{
+        a{
+                color: $cor-azul;
+                font-weight: 700;
+            }
+        }
+    
+    
+    
+    a{
+        height: 38px;
+        display: flex;
+        align-items: center;
+        border: 1px solid $cor-linha-borda;
+        justify-content: center;
+        text-decoration: none;
+        color: $cor-item-filtro;
+        font-weight: 400;
+        font-size: 16px;
+
+        
+    }
+}
+
+
