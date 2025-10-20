@@ -1,0 +1,57 @@
+@use '../../variables' as *;
+
+.categorias {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 39px auto 0 auto;
+    
+    ul {
+        display: flex;
+        gap: 42px;
+        padding: 0 40px;
+        
+        li {
+           
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: black;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    padding: 34px;
+                    box-shadow: 0 4px 11px hsl(0,0%,0%,13%);
+                    background-color: $cor-fundo-claro;
+                    border-radius: 10px;
+                }
+
+                span {
+                    padding-top: 22px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+            }
+
+            &.ativo {
+                a {
+                    img {
+                        background-color: $cor-branco;
+                    }
+
+                    span{
+                        color: $cor-roxo;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
